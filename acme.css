@@ -170,7 +170,6 @@ ul{
     flex-direction: row;
     padding:2em 12em 1em;
     padding-left: 7em;
-
 }
 
 .card-content{
@@ -225,18 +224,21 @@ ul{
 
 .section-d{
     color: #000814;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 50em)) 1fr;
 }
 
-.contact{
+
+ .contact{
     background: #118ab2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right:780px;
     padding: 140px;
-    
+    width: 480px;
 }
+
 
 .contact h2{
     color:#f8f9fa;
@@ -245,31 +247,34 @@ ul{
     font-size: 35px;
 }
 
+
+
 .contact p{
     text-align: center;
     color: #f8f9fa;
     margin:0em -8em 1em;
-    padding: 2px 2em 0 0;
+    padding: 2px 3em 0 0;
     line-height: 1.5;
     transform: translateY(-10px);
 }
+
 
 .contact span{
     color: #f8f9fa;
     transform: translateX(-30px) translateY(15px);
 }
 
+
 .about{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 600px;
     padding: 136px;
-    transform: translateY(-400px);
     background: #343a40;
-    margin: -5px 0 -12em 739px;
+    width:500px;
 }
+
 
 .about h2{
     color: #f8f9fa;
@@ -286,12 +291,21 @@ ul{
     line-height: 1.5;
     transform: translateY(-11px);
     text-align: center;
+} 
+
+.section-e{
+    color: #000814;
+    padding: 2em;
+    text-align: center;
+    color: #f8f9fa;
+    background: #000814;
 }
 
-.section-e h2{
-    color: #000814;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
+div{
+    display: block;
+}
+
+.section-e a{
+    text-decoration: none;
+    color: aqua;
 }
