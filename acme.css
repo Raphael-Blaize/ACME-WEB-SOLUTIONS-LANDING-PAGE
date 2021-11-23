@@ -4,6 +4,11 @@ body{
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
+    opacity: 0.9;
+}
+
+main{
+    z-index: 1;
 }
 
 header{
@@ -84,6 +89,10 @@ header{
     height: 500px;
 }
 
+#section-b{
+    height: 630px;
+}
+
 .container{
     padding: 2em;
     display: flex;
@@ -95,7 +104,7 @@ header{
 .card{
     background: white;
     width: 300px;
-    height: 500px;
+    height: 550px;
     margin: 10px;
     border-radius: 15px ;
 }
@@ -138,6 +147,90 @@ header{
 }
 
 
+#section-c{
+    height: 290px;
+    background-color:white;
+    color: #333;
+    opacity: 0.85;
+    flex-wrap: wrap;
+
+}
+
+.service{
+    position: relative;
+    top: 90px;
+}
+
+.service h3{
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.service p{
+    margin-left: 310px;
+    margin-right: 310px;
+    padding: 2px 0;
+}
+
+
+#section-d{
+    height: 360px;
+}
+
+.contact{
+    background-color: #2690d4;
+    height: 360px; 
+}
+
+.contact h3{
+    position: relative;
+    top: 80px;
+    font-weight: bold;
+}
+
+.contact p {
+    position: relative;
+    top: 130px;
+    font-weight: 700;
+}
+
+.about-more h3{
+    position: relative;
+    top: 80px;
+    font-weight: bold;
+}
+
+.about-more p{
+    position: relative;
+    top: 130px;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#main-footer{
+    height: 70px;
+    background-color: black;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:50px;
+    z-index: 2;
+}
+
+.foot h3{
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.foot a{
+    text-decoration: none;
+    color:#2690d4
+}
+
+
 
 @media(max-width: 900px){
     .header h1{
@@ -152,7 +245,48 @@ header{
     }
 }
 
+@media(max-width: 1202px){
+    #section-b{
+        height: auto;
+    }
+}
 
+@media(max-width: 1000px){
+    .service h3{
+        transform: translateY(-60px);
+    }
+    .service p{
+        margin-left: 200px;
+        margin-right: 200px;
+        transform: translateY(-90px);
+        text-align: center;
+    }
+}
 
+@media(max-width: 600px){
+    .service p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
 
+@media(max-width: 420px){
+    .service p{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media(max-width: 300px){
+    .service p{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+/* @media(max-width: 991px){
+    #main-footer{
+        transform: translateY(-90px);
+    }
+} */
 
