@@ -1,7 +1,20 @@
+body{
+    background: #333;
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+header{
+    height: 500px;
+}
+
 .img-fluid{
-    width: 1600px;
-    height: 480px;
-    opacity: 0.9; 
+    width: 3000px;
+    height: 490px;
+    opacity: 0.5; 
+    max-width: 100%;
 }
 
 .header{
@@ -31,7 +44,7 @@
     margin-left: 10px;
     margin-right: 20px;
     width: 160px;
-    background-color: #343a40;
+    background-color: #333;
     color: white;
     border-color: white;
     border-width: 0.01px;
@@ -44,19 +57,85 @@
     color: black;
 }
 
-.web{
+#section-a{
+    background-color: white;
+    padding-bottom: 2em;
+}
+
+#section-a h2{
+    color:#333;
+    position: relative;
+    top: 30px;
     text-align: center;
-    transform: translateY(-200px);
-    margin-top: 10px;
+    font-size: 1.7rem;
 }
 
-.row p{
-    transform: translateY(-180px);
-    padding-left: 12px;
-    margin-left: 12px;
-    margin-right: 12px;
+#section-a p{
+    text-align: center;
+    color: #333;
+    position: relative;
+    top: 50px;
+    margin-left: 120px;
+    margin-right: 100px;
+    margin-bottom: 50px;
 }
 
+#section-b{
+    height: 500px;
+}
+
+.container{
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 15px ;
+}
+
+.card-img{
+    background-color:aqua;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+}
+
+.card-1{
+    background-image: url("https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg");
+}
+
+.card-2{
+    background-image:url("https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg") ;
+}
+
+.card-3{
+    background-image: url("https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg");
+}
+
+.card h2{
+    color:#333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.card p{
+    color:#333;
+    font-size: 1rem;
+    margin: 50px;
+    font-weight: 500;
+    text-align: center;
+}
 
 
 
@@ -74,15 +153,6 @@
 }
 
 
-@media (max-width: 1373px){
-    .web{
-        margin-top: 5px;
-    }
-}
 
 
-@media (max-width: 1114px){
-    .web{
-        margin-top: 5px;
-    }
-}
+
